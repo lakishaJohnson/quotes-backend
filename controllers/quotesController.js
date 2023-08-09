@@ -8,15 +8,14 @@ const {
   deleteQuote,
   updateQuote,
 } = require("../queries/quotes");
-const {
-    checkAuthor, checkBoolean, 
-} = require("../validations/checkQuotes")
+const { checkAuthor, checkBoolean } = require("../validations/checkQuotes");
 
 // INDEX w/QUERIES
 quotes.get("/", async (req, res) => {
   const { order, is_favorite } = req.query;
   try {
     const allQuotes = await getAllQuotes(order, is_favorite);
+    // console.log(allQuotes)
     if (allQuotes.length > 0) {
       res.status(200).json(allQuotes);
     } else {
@@ -41,7 +40,7 @@ quotes.get("/:id", async (req, res) => {
 
 // CREATE
 quotes.post("/", checkAuthor, checkBoolean, async (req, res) => {
-// quotes.post("/", async (req, res) => {
+  // quotes.post("/", async (req, res) => {
   try {
     const quote = await createQuote(req.body);
     res.json(quote);
