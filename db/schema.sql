@@ -10,7 +10,7 @@ CREATE TABLE quotes (
  author TEXT,
  source TEXT,
  language TEXT,
- year_quoted INT,
+ year_quoted INT DEFAULT NULL,
  is_favorite BOOLEAN
 );
 
