@@ -94,21 +94,21 @@ const updateQuote = async (id, quote) => {
 };
 
 // RANDOM QUOTE
-const getRandomQuote = async () => {
-  try {
-    const countQuery = "SELECT COUNT(*) FROM quotes";
-    const { count } = await db.one(countQuery);
+// const getRandomQuote = async () => {
+//   try {
+//     const countQuery = "SELECT COUNT(*) FROM quotes";
+//     const { count } = await db.one(countQuery);
 
-    const randomIndex = Math.floor(Math.random() * count);
-    const randomQuote = await db.one(
-      "SELECT * FROM quotes OFFSET $1 LIMIT 1",
-      randomIndex
-    );
-    return randomQuote;
-  } catch (error) {
-    return error;
-  }
-};
+//     const randomIndex = Math.floor(Math.random() * count);
+//     const randomQuote = await db.one(
+//       "SELECT * FROM quotes OFFSET $1 LIMIT 1",
+//       randomIndex
+//     );
+//     return randomQuote;
+//   } catch (error) {
+//     return error;
+//   }
+// };
 
 module.exports = {
   getAllQuotes,
@@ -116,5 +116,5 @@ module.exports = {
   createQuote,
   deleteQuote,
   updateQuote,
-  getRandomQuote,
+//   getRandomQuote,
 };
