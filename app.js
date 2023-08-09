@@ -1,7 +1,7 @@
 //DEPENDENCIES
 const cors = require("cors");
-const express = require("express");
-
+const express = require("express"); 
+const { getRandomQuote } = require('./queries/quotes');
 //CONFIGURE
 const app = express();
 
@@ -10,21 +10,18 @@ app.use(cors());
 app.use(express.json());
 
 //ROUTES
-app.get("/", (req,res) => {
-    res.send("Welcome")
-})
-// app.get("/", async (req, res) => {
-//     try {
-//       const randomQuote = await getRandomQuote();
-//       if (randomQuote) {
-//         res.status(200).json(randomQuote);
-//       } else {
-//         res.status(404).json({ error: "No quotes found" });
-//       }
-//     } catch (error) {
-//       res.status(500).json({ error: "Server error" });
-//     }
-//   });
+app.get("/", async (req, res) => {
+    try {
+      const randomQuote = await getRandomQuote();
+      if (randomQuote) {
+        res.status(200).json(randomQuote);
+      } else {
+        res.status(404).json({ error: "No quotes found" });
+      }
+    } catch (error) {
+      res.status(500).json({ error: "Server error" });
+    }
+  });
 
 //QUOTES ROUTE
 const quotesController = require("./controllers/quotesController.js");
