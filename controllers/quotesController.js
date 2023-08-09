@@ -1,22 +1,18 @@
 // THIS FILE HOLDS ALL THE CRUD ROUTES: REQUESTS TO DATABASE
 const express = require("express");
 const quotes = express.Router();
+const {
+  getAllQuotes,
+  getQuote,
+  createQuote,
+  deleteQuote,
+  updateQuote,
+} = require("../queries/quotes");
+const {
+    checkAuthor, checkBoolean, 
+} = require("../validations/checkQuotes")
 
-// RANDOM QUOTE
-quotes.get("/quotes", async (req, res) => {
-  try {
-    const randomQuote = await getRandomQuote();
-    if (randomQuote) {
-      res.status(200).json(randomQuote);
-    } else {
-      res.status(404).json({ error: "No quotes found" });
-    }
-  } catch (error) {
-    res.status(500).json({ error: "Server error" });
-  }
-});
-
-// INDEX
+// INDEX w/QUERIES
 quotes.get("/", async (req, res) => {
   const { order, is_favorite } = req.query;
   try {
@@ -44,8 +40,8 @@ quotes.get("/:id", async (req, res) => {
 });
 
 // CREATE
-// quotes.post("/", checkName, checkBoolean, checkArtist, async (req, res) => {
-quotes.post("/", async (req, res) => {
+quotes.post("/", checkAuthor, checkBoolean, async (req, res) => {
+// quotes.post("/", async (req, res) => {
   try {
     const quote = await createQuote(req.body);
     res.json(quote);
