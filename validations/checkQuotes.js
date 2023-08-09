@@ -1,8 +1,8 @@
-const checkName = (req, res, next) => {
-    if (req.body.name) {
+const checkAuthor = (req, res, next) => {
+    if (req.body.author) {
       next();
     } else {
-      res.status(400).json({ error: "Name is required" });
+      res.status(400).json({ error: "Author is required" });
     }
 }
 
