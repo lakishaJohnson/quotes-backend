@@ -30,7 +30,7 @@ quotes.get("/", async (req, res) => {
 quotes.get("/:id", async (req, res) => {
   const { id } = req.params;
   const quote = await getQuote(id);
-  if (quote) {
+  if (quote.id) {
     res.json(quote);
   } else {
     res.redirect("/404"); // BROWSER ERROR
