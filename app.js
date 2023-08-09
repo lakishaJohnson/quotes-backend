@@ -14,9 +14,9 @@ app.get("/", (req,res) => {
     res.send("Welcome")
 })
 
-//SONGS ROUTE
-// const songsController = require("./controllers/songController.jsx");
-// app.use("/songs", songsController);
+//QUOTES ROUTE
+const quotesController = require("./controllers/quotesController.js");
+app.use("/quotes", quotesController);
 
 //404 PAGE
 app.get("*", (req, res) => {
