@@ -1,69 +1,69 @@
 \c quotes_dev;
 
 INSERT INTO quotes (category, quote, author, source, language, year_quoted, is_favorite) VALUES
-('LOVE','YOU KNOW YOU''RE IN LOVE WHEN YOU CAN''T FALL ASLEEP BECAUSE REALITY IS FINALLY BETTER THAN YOUR DREAMS','DR. SEUSS','MOVIE: THE LORAX','ENGLISH',1972,TRUE),
+('LOVE','You know you''re in love when you can''t fall asleep because reality is finally better than your dreams.','DR. SEUSS','MOVIE: THE LORAX','ENGLISH',1972,TRUE),
 
-('LOVE','LOVE IS ALWAYS PATIENT AND KIND. IT IS NEVER RUDE OR SELFISH. IT DOES NOT TAKE OFFENSE AND IS NOT RESENTFUL. LOVE TAKES NO PLEASURE IN OTHER PEOPLE''S SINS, BUT DELIGHTS IN THE TRUTH. IT IS ALWAYS READY TO EXCUSE, TO TRUST, TO HOPE, AND TO ENDURE WHATEVER COMES','CORINTHIANS 1 13:4-7','THE HOLY BIBLE','HEBREW',53,TRUE),
+('LOVE','Love is always patient and kind. It is never rude or selfish. It does not take offense and is not resentful. Love takes no pleasure in other people''s sins, but delights in the truth. It is always ready to excuse, to trust, to hope, and to endure whatever comes.','CORINTHIANS 1 13:4-7','THE HOLY BIBLE','HEBREW', 53, TRUE),
 
-('LOVE','LOVE ALL, TRUST A FEW, DO WRONG TO NONE','WILLIAM SHAKESPEARE','PLAY: ALL''S WELL THAT ENDS WELL','ENGLISH',1623,TRUE),
+('LOVE','Love all, trust a few, do wrong to none.','WILLIAM SHAKESPEARE','PLAY: ALL''S WELL THAT ENDS WELL','ENGLISH', 1623, TRUE),
 
-('INSPIRATIONAL','WE MAY ENCOUNTER MANY DEFEATS BUT WE MUST NOT BE DEFEATED','MAYA ANGELOU','BOOK: I KNOW WHY the CAGED BIRD SINGS','ENGLISH',1969,TRUE),
+('INSPIRATIONAL','We may encounter many defeats, but we must not be defeated.','MAYA ANGELOU','BOOK: I KNOW WHY the CAGED BIRD SINGS','ENGLISH', 1969, TRUE),
 
-('INSPIRATIONAL','THE ONLY THING THAT FEELS BETTER THAN WINNING IS WINNING WHEN NOBODY THOUGHT YOU COULD','HANK AARON','MLB BOSTON BRAVES','ENGLISH',1952,TRUE),
+('INSPIRATIONAL','The only thing that feels better than winning is winning when nobody thought you could.','HANK AARON','MLB BOSTON BRAVES','ENGLISH', 1952, TRUE),
 
-('INSPIRATIONAL', 'IF YOUR ACTIONS INSPIRE OTHERS TO DREAM MORE, LEARN MORE, DO MORE AND BECOME MORE, YOU ARE A LEADER', 'JOHN QUINCY ADAMS', 'PAPER: AMERICAN REVOLUTION', 'ENGLISH', 1783, TRUE),
+('INSPIRATIONAL','If your actions inspire others to dream more, learn more, do more, and become more, you are a leader.', 'JOHN QUINCY ADAMS', 'PAPER: AMERICAN REVOLUTION', 'ENGLISH', 1783, TRUE),
 
-('DEATH', 'EVERYBODY IS GOING TO BE DEAD ONE DAY, JUST GIVE THEM TIME', 'NEIL DEGRASSI', 'TV SHOW: NOVA', 'ENGLISH', 2023, TRUE),
+('DEATH', 'Everybody is going to be dead one day, just give them time.', 'NEIL DEGRASSI', 'TV SHOW: NOVA', 'ENGLISH', 2023, TRUE),
 
-('DEATH', 'TO THE WELL-ORGANIZED MIND, DEATH IS BUT THE NEXT GREAT ADVENTURE', 'J.K ROWLING', 'BOOK: HARRY POTTER & THE SORCERER''S STONE', 'ENGLISH', 2015, TRUE),
+('DEATH', 'To the well-organized mind, death is but the next great adventure.', 'J.K ROWLING', 'BOOK: HARRY POTTER & THE SORCERER''S STONE', 'ENGLISH', 2015, TRUE),
 
-('DEATH', 'IF A MAN HAS NOT DISCOVERED SOMETHING THAT HE WILL DIE FOR, HE ISN''T FIT TO LIVE', 'MLK, JR.', 'LOCATION: ALABAMA', 'ENGLISH', 1955, FALSE),
+('DEATH', 'If a man has not discovered something that he will die for, he isn''t fit to live.', 'MLK, JR.', 'LOCATION: ALABAMA', 'ENGLISH', 1955, FALSE),
 
-('LIFE', 'YOUR TIME IS LIMITED, DON''T WASTE IT LIVING SOMEONE ELSE''S LIFE', 'STEVE JOBS', 'MAGAZINE: THE ROLLING STONE', 'ENGLISH', 1994, TRUE),
+('LIFE', 'Your time is limited, don''t waste it living someone else''s life."', 'STEVE JOBS', 'MAGAZINE: THE ROLLING STONE', 'ENGLISH', 1994, TRUE),
 
-('LIFE', 'LEARN AS IF YOU WILL LIVE FOREVER, LIVE LIKE YOU WILL DIE TOMORROW: "Tamē hammēśa māṭē jīvaśō tēma śīkhō, ēvī rītē jīvō kē jēma tamē kālē marī jaśō"', 'MAHATMA GANDHI', 'LOCATION: INDIA', 'GUJARATI', 1908, FALSE),
+('LIFE', 'Learn as if you will live forever, live like you will die tomorrow: "Tamē hammēśa māṭē jīvaśō tēma śīkhō, ēvī rītē jīvō kē jēma tamē kālē marī jaśō"', 'MAHATMA GANDHI', 'LOCATION: INDIA', 'GUJARATI', 1908, FALSE),
 
-('LIFE', 'STAY AWAY FROM THOSE PEOPLE WHO TRY TO DISPARAGE YOUR AMBITIONS. SMALL MINDS WILL ALWAYS DO THAT, BUT GREAT MINDS WILL GIVE YOU A FEELING THAT YOU CAN BECOME GREAT TOO', 'MARK TWAIN', 'BOOK: ADVICE TO YOUTH', 'ENGLISH', 1882, TRUE),
+('LIFE', 'Stay away from those people who try to disparage your ambitions. Small minds will always do that, but great minds will give you a feeling that you can become great too."', 'MARK TWAIN', 'BOOK: ADVICE TO YOUTH', 'ENGLISH', 1882, TRUE),
 
-('FUNNY', 'LIFE IS LIKE A BOX OF CHOCOLATES. YOU NEVER KNOW WHAT YOU''RE GONNA GET', 'FORREST GUMP', 'MOVIE: FORREST GUMP', 'ENGLISH', 1994, TRUE),
+('FUNNY', 'Life is like a box of chocolates. You never know what you''re gonna get.', 'FORREST GUMP', 'MOVIE: FORREST GUMP', 'ENGLISH', 1994, TRUE),
 
-('FUNNY', 'I HAVE NO SPECIAL TALENT. I AM ONLY PASSIONATELY CURIOUS: "ICH HABE KEIN BESONDERES TALENT. ICH BIN NUR LEIDENSCHAFTLICH NEUGIERIG"', 'ALBERT EINSTEIN', 'NULL', 'GERMAN', NULL, TRUE),
+('FUNNY', 'I have no special talent. I am only passionately curious: "ICH HABE KEIN BESONDERES TALENT. ICH BIN NUR LEIDENSCHAFTLICH NEUGIERIG"', 'ALBERT EINSTEIN', 'NULL', 'GERMAN', NULL, TRUE),
 
-('FUNNY', 'THE OLDER YOU GET, THE BETTER YOU GET, UNLESS YOU''RE A BANANA', 'BETTY WHITE', 'SHOW: THE GOLDEN GIRLS', 'ENGLISH', 2016, TRUE),
+('FUNNY', 'The older you get, the better you get, unless you''re a banana.', 'BETTY WHITE', 'SHOW: THE GOLDEN GIRLS', 'ENGLISH', 2016, TRUE),
 
-('STRENGTH', 'ANYTHING WORTH HAVING, DOES NOT COME EASY: "TODO LO QUE VALE LA PENA, NO SALE FÁCIL"', 'UNKNOWN', 'LOCATION: THE BRONX', 'SPANISH', NULL, TRUE),
+('STRENGTH', 'Anything worth having does not come easy: "TODO LO QUE VALE LA PENA, NO SALE FÁCIL"', 'UNKNOWN', 'LOCATION: THE BRONX', 'SPANISH', NULL, TRUE),
 
-('HOPE', 'HOPE IS THAT THING INSIDE US THAT INSIST, DESPITE ALL THE EVIDENCE, THAT SOMETHING BETTER AWAITS US IF WE REACH FOR IT, WORK FOR IT, AND FIGHT FOR IT', 'BARACK OBAMA', 'SPEECH: WHITE HOUSE', 'ENGLISH', 2012, TRUE),
+('HOPE', 'Hope is that thing inside us that insists, despite all the evidence, that something better awaits us if we reach for it, work for it, and fight for it.', 'BARACK OBAMA', 'SPEECH: WHITE HOUSE', 'ENGLISH', 2012, TRUE),
 
-('DETERMINATION', 'A DREAM DOESN''T BECOME REALITY THROUGH MAGIC; IT TAKES SWEAT, DETERMINATION, AND HARD WORK', 'COLIN POWELL', 'NULL', 'ENGLISH', 2007, TRUE),
+('DETERMINATION', 'A dream doesn''t become reality through magic; it takes sweat, determination, and hard work.', 'COLIN POWELL', 'NULL', 'ENGLISH', 2007, TRUE),
 
-('FRIENDSHIP', 'FRIENDSHIP IS THE HARDEST THING IN THE WORLD TO EXPLAIN', 'MUHAMMAD ALI', 'NULL', 'ENGLISH', 2016, TRUE),
+('FRIENDSHIP', 'Friendship is the hardest thing in the world to explain.', 'MUHAMMAD ALI', 'NULL', 'ENGLISH', 2016, TRUE),
 
-('TRUST', 'TRUST IS THE GLUE TO LIFE. IT''S THE MOST ESSENTIAL INGREDIENT IN EFFECTIVE COMMUNICATION. IT''S THE FOUNDATIONAL PRINCIPLE THAT HOLDS ALL RELATIONSHIPS', 'STEPHEN COVEY', 'BOOK: FIRST THINGS FIRST', 'ENGLISH', 1995, TRUE),
+('TRUST', 'Trust is the glue to life. It''s the most essential ingredient in effective communication. It''s the foundational principle that holds all relationships.', 'STEPHEN COVEY', 'BOOK: FIRST THINGS FIRST', 'ENGLISH', 1995, TRUE),
 
-('RELIGION', 'IF GOD DID NOT EXIST, WE MUST INVENT HIM', 'VOLTAIRE', 'NULL', 'ENGLISH', NULL, TRUE),
+('RELIGION', 'If God did not exist, we must invent him.', 'VOLTAIRE', 'NULL', 'ENGLISH', NULL, TRUE),
 
-('RELIGION', 'NO MATTER HOW STRONGLY THE WIND OF EVIL MAY BLOW, THE FLAME OF TRUTH CANNOT BE EXTINGUISHED', 'DALAI LAMA', 'NULL', 'ENGLISH', NULL, TRUE),
+('RELIGION', 'No matter how strongly the wind of evil may blow, the flame of truth cannot be extinguished.', 'DALAI LAMA', 'NULL', 'ENGLISH', NULL, TRUE),
 
-('RELIGION', 'DO NOT DWELL IN THE PAST, DO NOT DREAM OF THE FUTURE, CONCENTRATE THE MIND ON THE PRESENT MOMENT', 'BUDDHA', 'TEACHINGS', 'PALI', NULL, TRUE),
+('RELIGION', 'Do not dwell in the past, do not dream of the future, concentrate the mind on the present moment.', 'BUDDHA', 'TEACHINGS', 'PALI', NULL, TRUE),
 
-('INSPIRATIONAL', 'THE ONLY LIMIT TO OUR REALIZATION OF TOMORROW WILL BE OUR DOUBTS OF TODAY', 'FRANKLIN D. ROOSEVELT', 'SPEECH: INAUGURAL ADDRESS', 'ENGLISH', 1933, TRUE),
+('INSPIRATIONAL', 'The only limit to our realization of tomorrow will be our doubts of today.', 'FRANKLIN D. ROOSEVELT', 'SPEECH: INAUGURAL ADDRESS', 'ENGLISH', 1933, TRUE),
 
-('MOTIVATION', 'SUCCESS IS NOT FINAL, FAILURE IS NOT FATAL: IT IS THE COURAGE TO CONTINUE THAT COUNTS', 'WINSTON CHURCHILL', 'SPEECH: LORD MAYOR''S LUNCHEON', 'ENGLISH', 1942, TRUE),
+('MOTIVATION', 'Success is not final, failure is not fatal: it is the courage to continue that counts.', 'WINSTON CHURCHILL', 'SPEECH: LORD MAYOR''S LUNCHEON', 'ENGLISH', 1942, TRUE),
 
-('WISDOM', 'NOT EVERYTHING THAT IS FACED CAN BE CHANGED, BUT NOTHING CAN BE CHANGED UNTIL IT IS FACED', 'JAMES BALDWIN', 'BOOK: THE FIRE NEXT TIME', 'ENGLISH', 1963, TRUE),
+('WISDOM', 'Not everything that is faced can be changed, but nothing can be changed until it is faced.', 'JAMES BALDWIN', 'BOOK: THE FIRE NEXT TIME', 'ENGLISH', 1963, TRUE),
 
-('WISDOM', 'THE GREATEST GLORY IN LIVING LIES NOT IN NEVER FALLING, BUT IN RISING EVERY TIME WE FALL', 'NELSON MANDELA', 'AUTOBIOGRAPHY: LONG WALK TO FREEDOM', 'ENGLISH', 1994, TRUE),
+('WISDOM', 'The greatest glory in living lies not in never falling, but in rising every time we fall.', 'NELSON MANDELA', 'AUTOBIOGRAPHY: LONG WALK TO FREEDOM', 'ENGLISH', 1994, TRUE),
 
-('WISDOM', 'IT DOES NOT MATTER HOW SLOWLY YOU GO AS LONG AS YOU DO NOT STOP', 'CONFUCIUS', 'TEACHINGS', 'CHINESE', NULL, TRUE),
+('WISDOM', 'It does not matter how slowly you go as long as you do not stop.', 'CONFUCIUS', 'TEACHINGS', 'CHINESE', NULL, TRUE),
 
-('PROVERB', 'धेरै चिनी तितो हुन्छ: TOO MUCH SUGAR IS BITTER', 'UNKNOWN', 'FOLK WISDOM', 'NEPALI', NULL, TRUE),
+('PROVERB', 'धेरै चिनी तितो हुन्छ: Too much sugar is bitter.', 'UNKNOWN', 'FOLK WISDOM', 'NEPALI', NULL, TRUE),
 
-('LOVE', 'LOVE IS THE ONLY FORCE CAPABLE OF TRANSFORMING AN ENEMY INTO A FRIEND', 'MARTIN LUTHER KING JR.', 'BOOK: STRENGTH TO LOVE', 'ENGLISH', 1963, TRUE),
+('LOVE', 'Love is the only force capable of transforming an enemy into a friend.', 'MARTIN LUTHER KING JR.', 'BOOK: STRENGTH TO LOVE', 'ENGLISH', 1963, TRUE),
 
-('LIFE', 'LIFE IS EITHER A DARING ADVENTURE OR NOTHING AT ALL', 'HELEN KELLER', 'BOOK: THE OPEN DOOR', 'ENGLISH', 1929, TRUE),
+('LIFE', 'Life is either a daring adventure or nothing at all.', 'HELEN KELLER', 'BOOK: THE OPEN DOOR', 'ENGLISH', 1929, TRUE),
 
-('FUNNY', 'I''M ON A SEAFOOD DIET. I SEE FOOD, AND I EAT IT', 'UNKNOWN', 'NULL', 'ENGLISH', NULL, TRUE);
+('FUNNY', 'I''m on a seafood diet. I see food, and I eat it.', 'UNKNOWN', 'NULL', 'ENGLISH', NULL, TRUE);
 
 -- //run on terminal to run this files/ restart new
 -- //psql -U postgres -f db/schema.sql
