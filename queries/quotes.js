@@ -45,6 +45,8 @@ const getAllQuotes = async (order, is_favorite, category) => {
     query += " ORDER BY author ASC";
   } else if (order === "desc") {
     query += " ORDER BY author DESC";
+  } else if (order === "is_favorite") {
+    query += " ORDER BY is_favorite DESC";
   }
 
   try {
@@ -103,25 +105,27 @@ const deleteQuote = async (id) => {
 
 // UPDATE: A QUOTE
 const updateQuote = async (id, quote) => {
+  let query = "UPDATE quotes SET";
+  let setClauses = [];
+  let values = [];
+
+  Object.keys(quote).forEach((key, index) => {
+    setClauses.push(`${key}=$${index + 1}`);
+    values.push(quote[key]);
+  });
+
+  query += " " + setClauses.join(", ") + " WHERE id=$" + (values.length + 1) + " RETURNING *";
+  values.push(id);
+
   try {
-    const updatedQuote = await db.one(
-      "UPDATE quotes SET category=$1, quote=$2, author=$3, source=$4, language=$5, year_quoted=$6, is_favorite=$7 where id=$8 RETURNING *",
-      [
-        quote.category,
-        quote.quote,
-        quote.author,
-        quote.source,
-        quote.language,
-        quote.year_quoted,
-        quote.is_favorite,
-        id,
-      ]
-    );
+    const updatedQuote = await db.one(query, values);
     return updatedQuote;
   } catch (error) {
+    console.error("Error updating the quote:", error);
     return error;
   }
 };
+
 
 // RANDOM QUOTE
 const getRandomQuote = async () => {
