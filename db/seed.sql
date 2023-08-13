@@ -27,7 +27,7 @@ INSERT INTO quotes (category, quote, author, source, language, year_quoted, is_f
 
 ('FUNNY', 'Life is like a box of chocolates. You never know what you''re gonna get.', 'FORREST GUMP', 'MOVIE: FORREST GUMP', 'ENGLISH', 1994, TRUE),
 
-('FUNNY', 'I have no special talent. I am only passionately curious: "ICH HABE KEIN BESONDERES TALENT. ICH BIN NUR LEIDENSCHAFTLICH NEUGIERIG"', 'ALBERT EINSTEIN', 'NULL', 'GERMAN', NULL, TRUE),
+('FUNNY', 'I have no special talent. I am only passionately curious: Ich habe kein besonderes Talent. Ich bin nur leidenschaftlich neugierig.', 'ALBERT EINSTEIN', 'NULL', 'GERMAN', NULL, TRUE),
 
 ('FUNNY', 'The older you get, the better you get, unless you''re a banana.', 'BETTY WHITE', 'SHOW: THE GOLDEN GIRLS', 'ENGLISH', 2016, TRUE),
 

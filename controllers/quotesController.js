@@ -12,9 +12,9 @@ const { checkAuthor, checkBoolean } = require("../validations/checkQuotes");
 
 // INDEX w/QUERIES
 quotes.get("/", async (req, res) => {
-  const { order, is_favorite } = req.query;
+  const { order, is_favorite, category } = req.query;
   try {
-    const allQuotes = await getAllQuotes(order, is_favorite);
+    const allQuotes = await getAllQuotes(order, is_favorite, category);
     // console.log(allQuotes)
     if (allQuotes.length > 0) {
       res.status(200).json(allQuotes);
