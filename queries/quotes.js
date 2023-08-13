@@ -2,16 +2,45 @@
 const db = require("../db/dbConfig.js");
 
 // INDEX: ALL QUOTES w/QUERIES
-const getAllQuotes = async (order, is_favorite) => {
-  // Default SQL query to select all quotes
+const getAllQuotes = async (order, is_favorite, category) => {
+  // Start constructing the SQL query
   let query = "SELECT * FROM quotes";
-  // Check if is_favorite query parameter is provided and adjust the query accordingly
+  let whereConditions = [];
+
+  // Handle is_favorite condition
   if (is_favorite === "true") {
-    query += " WHERE is_favorite = true";
+    whereConditions.push("is_favorite = true");
   } else if (is_favorite === "false") {
-    query += " WHERE is_favorite = false";
+    whereConditions.push("is_favorite = false");
   }
-  // Check if order query parameter is provided and adjust the query accordingly
+
+  // Handle category condition
+  const validCategories = [
+    "LOVE",
+    "INSPIRATIONAL",
+    "DEATH",
+    "FUNNY",
+    "LIFE",
+    "HOPE",
+    "STRENGTH",
+    "FRIENDSHIP",
+    "TRUST",
+    "DETERMINATION",
+    "RELIGION",
+    "MOTIVATION",
+    "WISDOM",
+    "PROVERB",
+  ];
+  if (validCategories.includes(category)) {
+    whereConditions.push(`category = '${category}'`);
+  }
+
+  // Append WHERE conditions if any exist
+  if (whereConditions.length > 0) {
+    query += " WHERE " + whereConditions.join(" AND ");
+  }
+
+  // Handle order condition
   if (order === "asc") {
     query += " ORDER BY author ASC";
   } else if (order === "desc") {
@@ -23,7 +52,8 @@ const getAllQuotes = async (order, is_favorite) => {
     const allQuotes = await db.any(query);
     return allQuotes;
   } catch (error) {
-    return error;
+    console.error("Error executing the query:", error);
+    return [];
   }
 };
 
